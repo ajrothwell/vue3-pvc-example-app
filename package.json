@@ -1,0 +1,26 @@
+{
+  "name": "vue3-pvc-example-app",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@phila/vue-comps": "^3.0.12",
+    "accounting": "^0.4.1",
+    "axios": "^1.6.7",
+    "date-fns": "^3.3.1",
+    "foundation-sites": "^6.8.1",
+    "vue": "^3.4.19",
+    "vue-router": "^4.3.0",
+    "vuex": "^4.1.0"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^5.0.4",
+    "sass": "^1.71.1",
+    "vite": "^5.1.4"
+  }
+}
