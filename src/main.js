@@ -1,5 +1,7 @@
-import { createApp } from 'vue'
-import { createStore } from 'vuex'
+import { createApp } from 'vue';
+import { createStore } from 'vuex';
+
+import i18n from './i18n';
 
 import axios from 'axios';
 import myCreateStore from './myStore';
@@ -18,4 +20,5 @@ const store = createStore(myStore);
 createApp(App)
   .use(store)
   .use(configMixin, config)
-  .mount('#app')
+  .use(i18n())
+  .mount('#application')

@@ -9,12 +9,14 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "@phila/vue-comps": "^3.0.12",
+    "@phila/vue-comps": "https://github.com/CityOfPhiladelphia/phila-vue-comps#88fd2158ce253b21509d4c482bf825c084d08e14",
     "accounting": "^0.4.1",
     "axios": "^1.6.7",
     "date-fns": "^3.3.1",
     "foundation-sites": "^6.8.1",
+    "phila-standards": "^1.2.0",
     "vue": "^3.4.19",
+    "vue-i18n": "^9.9.1",
     "vue-router": "^4.3.0",
     "vuex": "^4.1.0"
   },

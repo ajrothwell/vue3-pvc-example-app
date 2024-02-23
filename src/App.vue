@@ -9,7 +9,7 @@
           <div class="app-divide"></div>
           <div class="page-title-container">
             <a href="#/">
-              <h1 class="page-title">PVC Example App</h1>
+              <h1 class="page-title">Vue 3 PVC Example App</h1>
             </a>
           </div>
         </div>
@@ -18,11 +18,11 @@
 
     <div id="components-root">
 
-      <!-- <badge :slots="badgeSlots"/>
+      <badge :slots="badgeSlots"/>
 
       <badge-custom :options="badgeCustomOptions"
                     :slots="badgeCustomSlots"
-      /> -->
+      />
 
       <font-awesome-icon icon="info-circle" class="fa-2x" />
 
@@ -68,12 +68,12 @@
       />
 
       <div class="margin-sides-20 component-label">vertical-tables:</div>
-      <vertical-table class="margin-20 margin-bottom-60 medium-8"
+      <!-- <vertical-table class="margin-20 margin-bottom-60 medium-8"
                       :slots="verticalTable_01_Slots"
                       :options="verticalTable_01_Options"
-      />
+      /> -->
 
-      <!-- <vertical-table
+      <vertical-table
         class="margin-20 margin-bottom-60 medium-8"
         :slots="{
           fields: [
@@ -98,7 +98,7 @@
             href: 'https://atlas.phila.gov'
           }
         }"
-      /> -->
+      />
 
       <div class="margin-sides-20 component-label">horizontal-table:</div>
       <!-- <horizontal-table class="margin-20 medium-10"
@@ -127,11 +127,11 @@
   import Callout from '@phila/vue-comps/src/components/Callout.vue';
   import PopoverLink from '@phila/vue-comps/src/components/PopoverLink.vue';
   import Popover from '@phila/vue-comps/src/components/Popover.vue';
-  // import VerticalTable from '@phila/vue-comps/src/components/VerticalTable.vue';
+  import VerticalTable from '@phila/vue-comps/src/components/VerticalTable.vue';
   // import HorizontalTable from '@phila/vue-comps/src/components/HorizontalTable.vue';
   import ExternalLink from '@phila/vue-comps/src/components/ExternalLink.vue';
-  // import Badge from '@phila/vue-comps/src/components/Badge.vue';
-  // import BadgeCustom from '@phila/vue-comps/src/components/BadgeCustom.vue';
+  import Badge from '@phila/vue-comps/src/components/Badge.vue';
+  import BadgeCustom from '@phila/vue-comps/src/components/BadgeCustom.vue';
   import Division from '@phila/vue-comps/src/components/Division.vue';
   import Paragraph from '@phila/vue-comps/src/components/Paragraph.vue';
 
@@ -140,11 +140,11 @@
       Callout,
       PopoverLink,
       Popover,
-      // VerticalTable,
+      VerticalTable,
       // HorizontalTable,
       ExternalLink,
-      // Badge,
-      // BadgeCustom,
+      Badge,
+      BadgeCustom,
       Division,
       Paragraph
     },
@@ -330,7 +330,6 @@
 
 <style>
 
-@import '../node_modules/phila-standards/dist/css/phila-app.min.css';
 
 #app-root {
   height: 100%
